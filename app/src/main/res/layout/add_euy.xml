@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDoMs"
+    android:background="@color/colorDasar">
+
+    <RelativeLayout
+        android:id="@+id/topContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/backButton"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:text="Manage Balance"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainContent"
+        android:layout_below="@id/topContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="55dp">
+
+        <RelativeLayout
+            android:id="@+id/pilihanButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:elevation="12dp"
+            android:layout_marginTop="35dp">
+
+            <RadioGroup
+                android:id="@+id/radioButtonGrup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="27dp"
+                    android:layout_marginEnd="10dp"
+                    android:text=""
+                    android:visibility="gone"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/radioIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="27dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Income"
+                    android:background="@drawable/radio_selector"
+                    android:button="@drawable/null_radio_button"
+                    android:elevation="4dp"
+                    android:textColor="@drawable/radio_text_selector"
+                    android:checked="false"/>
+
+                <RadioButton
+                    android:id="@+id/radioSpending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="26.8dp"
+                    android:text="Spending"
+                    android:background="@drawable/radio_selector"
+                    android:button="@drawable/null_radio_button"
+                    android:elevation="4dp"
+                    android:textColor="@drawable/radio_text_selector"
+                    android:checked="false"/>
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/pilihanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+
+            <TextView
+                android:id="@+id/nominalCuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="2dp"/>
+
+            <Button
+                android:id="@+id/inputDate"
+                android:layout_below="@id/nominalCuy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@color/black"
+                style="?android:spinnerStyle"
+                android:layout_marginStart="-15dp"
+                android:text="January 1, 2023"
+                android:onClick="openDatePicker"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_below="@id/inputDate"
+                android:id="@+id/dateCuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nominal"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/inputNominal"
+                android:layout_below="@id/dateCuy"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/noteCuy"
+                android:layout_below="@id/inputNominal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/inputNote"
+                android:layout_below="@id/noteCuy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/buttonAddValue"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputNote"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Add Value"
+                android:textColor="@color/white"
+                android:layout_marginTop="28dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

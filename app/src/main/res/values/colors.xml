@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#764AF1</color>
+    <color name="colorDasar">#F2F2F2</color>
+    <color name="textColor">#767676</color>
+    <color name="TextHijau">#2FBF69</color>
+    <color name="TextMerah">#F91111</color>
+</resources>

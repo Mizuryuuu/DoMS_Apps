@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_shape"
+            android:elevation="5dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Income"
+                android:textColor="@color/TextHijau"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dateItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type"
+                android:layout_marginTop="4dp"
+                android:text="Due date : 23 June, 2023"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/nominal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 500.000,"
+                android:textColor="@color/TextHijau"
+                android:layout_toStartOf="@id/tambahHijau"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tambahHijau"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/panah_naik"
+                android:layout_alignParentEnd="true"
+                android:gravity="center" />
+
+
+        </RelativeLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:background="@drawable/custom_shape"-->
+<!--            android:elevation="5dp"-->
+<!--            android:paddingHorizontal="20dp"-->
+<!--            android:paddingVertical="10dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/titleItem2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Spending"-->
+<!--                android:textColor="@color/TextMerah"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/titleItem2"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:text="Due date : 1 June, 2023"-->
+<!--                android:textSize="10sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_toStartOf="@id/kurangMerah"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="Rp. 250.000,"-->
+<!--                android:textColor="@color/TextMerah"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/kurangMerah"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="4dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginHorizontal="5dp"-->
+<!--                android:background="@drawable/minus"-->
+<!--                android:backgroundTint="@color/TextMerah" />-->
+
+<!--        </RelativeLayout>-->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
